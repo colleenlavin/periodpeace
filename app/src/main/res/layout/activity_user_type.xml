@@ -22,10 +22,11 @@
         android:background="#C1839F"
         android:textSize="36sp"
         android:fontFamily="sans-serif-light"
-        android:id="@+id/button2"
+        android:id="@+id/needHelpButton"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp" />
+        android:layout_marginTop="25dp"
+        android:onClick="goGetProducts"/>
     <Button
         android:layout_width="220dp"
         android:layout_height="80dp"
@@ -34,11 +35,12 @@
         android:textColor="#6D213C"
         android:background="#C1839F"
         android:fontFamily="sans-serif-light"
-        android:id="@+id/button"
+        android:id="@+id/willHelpButton"
         android:layout_marginTop="117dp"
-        android:layout_below="@+id/button2"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2" />
+        android:layout_below="@+id/needHelpButton"
+        android:layout_alignLeft="@+id/needHelpButton"
+        android:layout_alignStart="@+id/needHelpButton"
+        android:onClick="goGiveProducts"/>
 
 
 </RelativeLayout>
