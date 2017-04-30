@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "926920776527",
+    "firebase_url": "https://periodpeace2.firebaseio.com",
+    "project_id": "periodpeace2",
+    "storage_bucket": "periodpeace2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926920776527:android:767b017acc3bf9bd",
+        "android_client_info": {
+          "package_name": "localhost.periodpeace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926920776527-gs6f7us3bdvuju49km9tmrikplbui032.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "localhost.periodpeace",
+            "certificate_hash": "6755bf0df4d78530b3b31f3d7eb04a299d2a60de"
+          }
+        },
+        {
+          "client_id": "926920776527-u5psfc79p4re86u9iuk8gn85g0rp8s1m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMlMirPEpIcw3Tk2A9NbwnLyxyZU0oWmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926920776527-u5psfc79p4re86u9iuk8gn85g0rp8s1m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
