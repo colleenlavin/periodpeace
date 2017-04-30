@@ -47,11 +47,11 @@ public class navigateToTampons extends Activity {
     }
     //Go to next screen for giving stuff.
     public void goToClinic (View view) {
-        Intent Intent = new Intent(this, Thanks.class);
+        Intent Intent = new Intent(this, MapsToClinics.class);
         startActivity(Intent);
     }
     public void goToStudentCenter (View view) {
-        Intent Intent = new Intent(this, Thanks.class);
+        Intent Intent = new Intent(this, MapsToStudentCenters.class);
         startActivity(Intent);
     }
 }
