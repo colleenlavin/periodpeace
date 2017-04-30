@@ -14,39 +14,43 @@ public class navigateToTampons extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigate_to_tampons);
-        nearbyShelters = (Button) findViewById(R.id.goToPadsButton);
+        nearbyShelters = (Button) findViewById(R.id.navToCenterButton);
         nearbyShelters.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                goToShelters(v);
+                goToShelter(v);
             }
         });
-        nearbyClinics = (Button) findViewById(R.id.requestPadsButton);
+        nearbyClinics = (Button) findViewById(R.id.navToClinicButton);
         nearbyClinics.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 try{
-                    goRequestPads(v);
+                    goToClinic(v);
                 }
                 catch(Exception e){
                     System.out.println(e);
                 }
             }
         });
-        nearbyStudentCenters = (Button) findViewById(R.id.goToPadsButton);
+        nearbyStudentCenters = (Button) findViewById(R.id.navToCenterButton);
         nearbyStudentCenters.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                goToShelters(v);
+                goToStudentCenter(v);
             }
         });
     }
     //Go to next screen for getting stuff.
-    public void goToShelters (View view) {
+    public void goToShelter (View view) {
         Intent Intent = new Intent(this, MapsToShelter.class);
         startActivity(Intent);
     }
     //Go to next screen for giving stuff.
-    public void goRequestPads (View view) {
+    public void goToClinic (View view) {
+        Intent Intent = new Intent(this, Thanks.class);
+        startActivity(Intent);
+    }
+    public void goToStudentCenter (View view) {
         Intent Intent = new Intent(this, Thanks.class);
         startActivity(Intent);
     }
