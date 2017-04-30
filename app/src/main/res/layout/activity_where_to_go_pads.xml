@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".whereToGo">
+    tools:context=".WhereToGoPads">
 
     <TextView
         android:layout_width="wrap_content"
@@ -17,30 +17,32 @@
     <Button
         android:layout_width="220dip"
         android:layout_height="100dip"
-        android:text="Nearby Tampons "
+        android:text="Nearby Pads "
         android:padding="10dp"
         android:textColor="#6D213C"
         android:background="#C1839F"
         android:textSize="30sp"
         android:fontFamily="sans-serif-light"
-        android:id="@+id/button2"
+        android:id="@+id/goToPadsButton"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp" />
+        android:layout_marginTop="25dp"
+        android:onClick="goFindNearbyPads"/>
     <Button
         android:layout_width="220dip"
         android:layout_height="100dip"
-        android:text="Request Tampons"
+        android:text="Request Pads"
         android:padding="10dp"
         android:textSize="30sp"
         android:textColor="#6D213C"
         android:background="#C1839F"
         android:fontFamily="sans-serif-light"
-        android:id="@+id/button"
+        android:id="@+id/requestPadsButton"
         android:layout_marginTop="48dp"
-        android:layout_below="@+id/button2"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2" />
+        android:layout_below="@+id/goToPadsButton"
+        android:layout_alignLeft="@+id/goToPadsButton"
+        android:layout_alignStart="@+id/goToPadsButton"
+        android:onClick="goRequestPads"/>
 
 
 </RelativeLayout>

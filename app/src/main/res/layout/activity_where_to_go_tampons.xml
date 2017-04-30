@@ -1,15 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".navigateToTampons">
+    tools:context=".WhereToGoTampons">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:padding="20dp"
-        android:text="Ok, where?"
+        android:text="What do you want to do?"
         android:textColor="#6D213C"
         android:textSize="50sp"
         android:fontFamily="arial"
@@ -17,47 +16,33 @@
         android:id="@+id/textView" />
     <Button
         android:layout_width="220dip"
-        android:layout_height="75dip"
-        android:text="Shelter"
+        android:layout_height="100dip"
+        android:text="Nearby Tampons "
         android:padding="10dp"
         android:textColor="#6D213C"
         android:background="#C1839F"
         android:textSize="30sp"
         android:fontFamily="sans-serif-light"
-        android:id="@+id/navToShelterButton"
+        android:id="@+id/goToTamponsButton"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:onClick="goToShelter"/>
+        android:onClick="goFindNearbyTampons"/>
     <Button
         android:layout_width="220dip"
-        android:layout_height="75dip"
-        android:text="Clinic"
+        android:layout_height="100dip"
+        android:text="Request Tampons"
         android:padding="10dp"
         android:textSize="30sp"
         android:textColor="#6D213C"
         android:background="#C1839F"
         android:fontFamily="sans-serif-light"
-        android:id="@+id/navToClinicButton"
+        android:id="@+id/requestTamponsButton"
         android:layout_marginTop="48dp"
-        android:layout_below="@+id/navToShelterButton"
-        android:layout_alignLeft="@+id/navToShelterButton"
-        android:layout_alignStart="@+id/navToShelterButton"
-        android:onClick="goToClinic"/>
-    <Button
-        android:layout_width="220dip"
-        android:layout_height="75dip"
-        android:text="Student Center"
-        android:padding="10dp"
-        android:textSize="30sp"
-        android:textColor="#6D213C"
-        android:background="#C1839F"
-        android:fontFamily="sans-serif-light"
-        android:id="@+id/navToCenterButton"
-        android:layout_marginTop="48dp"
-        android:layout_below="@+id/navToClinicButton"
-        android:layout_alignLeft="@+id/navToClinicButton"
-        android:layout_alignStart="@+id/navToClinicButton"
-        android:onClick="goToStudentCenter"/>
+        android:layout_below="@+id/goToTamponsButton"
+        android:layout_alignLeft="@+id/goToTamponsButton"
+        android:layout_alignStart="@+id/goToTamponsButton"
+        android:onClick="goRequestTampons"/>
+
 
 </RelativeLayout>

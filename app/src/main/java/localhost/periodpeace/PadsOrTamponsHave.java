@@ -6,22 +6,22 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
-public class PadsOrTampons extends Activity {
-    Button needTampons;
-    Button needPads;
+public class PadsOrTamponsHave extends Activity {
+    Button haveTampons;
+    Button havePads;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pads_or_tampons);
-        needTampons = (Button) findViewById(R.id.needTamponsButton);
-        needTampons.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_pads_or_tampons_have);
+        haveTampons = (Button) findViewById(R.id.haveTamponsButton);
+        haveTampons.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
                 goGiveTampons(v);
             }
         });
-        needPads = (Button) findViewById(R.id.needPadsButton);
-        needPads.setOnClickListener(new View.OnClickListener() {
+        havePads = (Button) findViewById(R.id.havePadsButton);
+        havePads.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 try{
                     goGivePads(v);
@@ -34,12 +34,12 @@ public class PadsOrTampons extends Activity {
     }
     //Go to next screen for getting stuff.
     public void goGiveTampons (View view) {
-        Intent Intent = new Intent(this, WhereToGoTampons.class);
+        Intent Intent = new Intent(this, Thanks.class);
         startActivity(Intent);
     }
     //Go to next screen for giving stuff.
     public void goGivePads (View view) {
-        Intent Intent = new Intent(this, WhereToGoPads.class);
+        Intent Intent = new Intent(this, Thanks.class);
         startActivity(Intent);
     }
 }

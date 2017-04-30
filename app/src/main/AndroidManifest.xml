@@ -22,11 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UserType" />
         <activity android:name=".Thanks" />
-        <activity android:name=".whereToGo" />
         <activity android:name=".navigateToTampons" />
-        <activity android:name=".PadsOrTampons"></activity>
+        <activity android:name=".PadsOrTampons" />
+        <activity android:name=".WhereToGoTampons" />
+        <activity android:name=".WhereToGoPads" />
+        <activity android:name=".PadsOrTamponsHave"></activity>
     </application>
 
 </manifest>

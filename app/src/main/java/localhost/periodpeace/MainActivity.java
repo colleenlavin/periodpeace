@@ -37,12 +37,12 @@ public class MainActivity extends Activity {
 
     //Go to next screen for getting stuff.
     public void goGetProducts (View view) {
-        Intent Intent = new Intent(this, whereToGo.class);
+        Intent Intent = new Intent(this, PadsOrTampons.class);
         startActivity(Intent);
     }
     //Go to next screen for giving stuff.
     public void goGiveProducts (View view) {
-        Intent Intent = new Intent(this, Thanks.class);
+        Intent Intent = new Intent(this, PadsOrTamponsHave.class);
         startActivity(Intent);
     }
 }

@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:padding="20dp"
-        android:text="Do you want:"
+        android:text="Do you want?"
         android:textColor="#6D213C"
         android:textSize="42sp"
         android:fontFamily="sans-serif-light"
@@ -25,21 +25,25 @@
         android:textColor="#6D213C"
         android:background="#C1839F"
         android:textSize="36sp"
+        android:id="@+id/needPadsButton"
         android:fontFamily="sans-serif-light"
         android:padding="10dp"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp"
+        android:onClick="goGetPads"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_centerInParent="true"
+        android:id="@+id/needTamponsButton"
         android:text="tampons "
         android:textSize="36sp"
         android:textColor="#6D213C"
         android:background="#C1839F"
         android:fontFamily="sans-serif-light"
         android:padding="10dp"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp"
+        android:onClick="goGetTampons"/>
 
 
 </RelativeLayout>
