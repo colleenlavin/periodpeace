@@ -24,8 +24,9 @@
         </activity>
         <activity android:name=".UserType" />
         <activity android:name=".Thanks" />
-
-
+        <activity android:name=".whereToGo" />
+        <activity android:name=".navigateToTampons" />
+        <activity android:name=".PadsOrTampons"></activity>
     </application>
 
 </manifest>
