@@ -25,8 +25,9 @@ public class MapsToShelter extends FragmentActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        mMap.setMinZoomPreference(6.0f);
+        mMap.setMinZoomPreference(11.0f);
         mMap.setMaxZoomPreference(14.0f);
+
 
 
         // Add a marker at Tillary women's center and move the camera.
@@ -72,14 +73,14 @@ public class MapsToShelter extends FragmentActivity implements OnMapReadyCallbac
         LatLng padrePioShelter= new LatLng(40.820239, -73.915074);
         mMap.addMarker(new MarkerOptions().position(padrePioShelter).title("Saint Padre Pio Shelter"));
         // Add a marker at West Harlem Residence
-        LatLng westHarlemResidence= new LatLng(40.802548, -73.912332);
+        LatLng westHarlemResidence= new LatLng(40.819746, -73.939094);
         mMap.addMarker(new MarkerOptions().position(westHarlemResidence).title("West Harlem Residence"));
-        // Add a marker at Willow Ave Shelter - Westhab
-        LatLng willowAveShelter= new LatLng(40.802548, -73.912332);
-        mMap.addMarker(new MarkerOptions().position(willowAveShelter).title("Willow Ave Shelter - Westhab"));
+        // Add a marker at Women in Need Program
+        LatLng womenInNeed= new LatLng(40.669367, -73.950784);
+        mMap.addMarker(new MarkerOptions().position(willowAveShelter).title("Women in Need Program"));
 
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(tillWomShel));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(lenoxHill));
 
     }
 }
