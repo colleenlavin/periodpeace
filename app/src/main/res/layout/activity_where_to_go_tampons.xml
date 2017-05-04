@@ -17,7 +17,7 @@
     <Button
         android:layout_width="220dip"
         android:layout_height="100dip"
-        android:text="Nearby Tampons "
+        android:text="Find Tampons Nearby "
         android:padding="10dp"
         android:textColor="#6D213C"
         android:background="#C1839F"
