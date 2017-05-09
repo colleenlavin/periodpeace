@@ -34,12 +34,12 @@ public class PadsOrTamponsHave extends Activity {
     }
     //Go to next screen for getting stuff.
     public void goGiveTampons (View view) {
-        Intent Intent = new Intent(this, MapsToShelter.class);
+        Intent Intent = new Intent(this, Thanks.class);
         startActivity(Intent);
     }
     //Go to next screen for giving stuff.
     public void goGivePads (View view) {
-        Intent Intent = new Intent(this, MapsToClinics.class);
+        Intent Intent = new Intent(this, Thanks.class);
         startActivity(Intent);
     }
 }

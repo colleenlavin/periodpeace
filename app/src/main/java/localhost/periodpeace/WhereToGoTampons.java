@@ -1,10 +1,12 @@
 package localhost.periodpeace;
 
 import android.app.Activity;
+import android.net.Uri;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
+
 
 public class WhereToGoTampons extends Activity {
     Button nearbyTampons;
@@ -39,7 +41,9 @@ public class WhereToGoTampons extends Activity {
     }
     //Go to next screen for giving stuff.
     public void goRequestTampons (View view) {
-        Intent Intent = new Intent(this, Thanks.class);
-        startActivity(Intent);
+
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("sms:" + "7088226114"));
+        intent.putExtra("sms_body", "Hey, Colleen! Erik needs a tampon! He is located at NYU's Skirball Center, on stage!");
+        startActivity(intent);
     }
 }
